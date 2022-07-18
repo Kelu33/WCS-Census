@@ -19,6 +19,8 @@ public class Classroom {
         for (Wilder wilder : wilders) {
             System.out.println(wilder.whoAmI());
             wilder.setAware(true);
+            String newName = "Wild_" + wilder.getFirstname();
+            wilder.setFirstname(newName);
         }
 
         System.out.println("\n 6 months later :\n");
